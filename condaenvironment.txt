@@ -1,0 +1,35 @@
+python 3.13.5
+
+create new environment in anaconda navigator
+
+open powershell using admin rights
+
+conda activate "environment name"
+
+install ipykernel next:
+
+conda install -c anaconda ipykernel
+
+After installing this,
+
+just type,
+
+python -m ipykernel install --user --name="environment name"
+
+also install jupyter:
+
+conda install jupyter
+
+Can set conda-forge parameter:
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+
+If conda has compatibility issues installing a package (example):
+conda install numexpr python=3.13.5
+
+packages:
+conda install anaconda::pydantic 2.11.7
+conda install conda-forge::pandas 2.3.1
+conda install conda-forge::openai 1.97.1
+conda install quantopian::numexpr 2.11.0
+conda install conda-forge::json-repair 0.48.0
